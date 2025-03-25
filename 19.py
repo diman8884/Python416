@@ -232,15 +232,15 @@ import re
 # print(names[1][1][0])
 # print(isinstance(names[1][1][0], list))
 
-names = ['Adam', ["Bob", ["Chet", "Cat"], "Bard", "Bert"], 'Alex', ["Bea", "Bill"], "Ann"]
-
-def count_items(item_list):
-    count = 0
-    for item in item_list:
-        if isinstance(item, list):
-            count += count_items(item)
-    else:
-        count += 1
-    return count
-
-print(count_items(names))
+# names = ['Adam', ["Bob", ["Chet", "Cat"], "Bard", "Bert"], 'Alex', ["Bea", "Bill"], "Ann"]
+#
+# def count_items(item_list):
+#     count = 0
+#     for item in item_list:
+#         if isinstance(item, list):
+#             count += count_items(item)
+#     else:
+#         count += 1
+#     return count
+#
+# print(count_items(names))
