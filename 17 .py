@@ -239,9 +239,9 @@
 #
 # print(":".join("Hello"))
 
-
-s = "Hello"
-print(s[::-1])
+#
+# s = "Hello"
+# print(s[::-1])
 
 
 

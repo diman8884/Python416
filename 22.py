@@ -20,6 +20,6 @@
 
 # файлы
 
-f = open("text.txt")
-print(*f)
-print(f)
+# f = open("text.txt")
+# print(*f)
+# print(f)
