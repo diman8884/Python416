@@ -190,13 +190,13 @@
 #Декораторы
 
 # def my_decorator(func):    def func_wrapper():        print("Код до функции")        func()        print("Код после функции")            return func_wrapperdef func_test():    print("Hello, I am func 'func_test'")        test = my_decorator(func_test)test()
-def bold(fn):
-    def wrap():
-        return "<b>" + fn() + "</b"
-
-    return wrap
-
+# def bold(fn):
+#     def wrap():
+#         return "<b>" + fn() + "</b"
 #
+#     return wrap
+#
+# #
 # def italic(fn):
 #     def wrap():
 #         return "<i>" + fn() + "</i"
@@ -330,7 +330,7 @@ def bold(fn):
 # print(u"Привет")
 # print("Привет")
 
-print("C\\file.txt")
-print(r"C\file.txt")
-print(r"C\file.txt\\"[:-1])
-print(r"C\file.txt" + "\\")
+# print("C\\file.txt")
+# print(r"C\file.txt")
+# print(r"C\file.txt\\"[:-1])
+# print(r"C\file.txt" + "\\")

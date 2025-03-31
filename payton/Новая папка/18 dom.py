@@ -1,6 +1,5 @@
-i = " I am learning Python. hello, WORLD!"
-a = i[:i.find('h')]
-b = i[i.find('h'):i.rfind('h') + 1]
-c = i[i.rfind('h') + 1:]
+import re
 
-print(a + b[::-1] + c)
+st = "+7 499 456-45-78, +74994564578, +7 (499) 456 45 78, 74994564578"
+reg = r"\+?7\d{10}"
+print(re.findall(reg, st))
