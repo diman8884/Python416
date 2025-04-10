@@ -1,12 +1,16 @@
-import os
-import time
+f = open("test5.txt", "w")
+f.write("Замена строки в текстовом файле; \n изменить строку в списке; \n записать список в файл;")
+f.close()
 
-file_path = "C:\\Users\\дл.DESKTOP-N32060M\\OneDrive\\Рабочий стол\\top academiya\\urok\\pyton\\test3.txt"
+f = open("test3.txt", "r")
+read_line = f.readlines()
+print(read_line)
+f.close()
 
-if os.path.exists(file_path):
-    directory, name = os.path.split(file_path)
-    atime = os.path.getatime(file_path)
-    t = time.strftime("%d.%m.%Y, %H:%M:%S", time.localtime(atime))
-    print(f"{name} ({directory}) - время последнего доступа к файлу {t}")
+pos1 = int(input("pos1 = "))
+pos2 = int(input("pos2 = "))
+
+if 0 <= pos1 < len(read_line) and 0 <= pos2 < len(read_line):
+    read_line[pos1], read_line[pos2] = read_line[pos2],  read_line[pos1]
 else:
-    print(f"Файл {file_path} не существует")
+    print("Такой строки нет")

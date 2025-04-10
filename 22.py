@@ -165,14 +165,14 @@
 # print(os.listdir('..'))
 # print(os.listdir('.venv'))
 
-import os
-# os.mkdir('folder')# создать папку
-# os.rmkdir('folder.txt') # удалить папку
-
-# os.makedirs('nested1/nested2/nested3') # создает директорию с подпапками
-
-os.rename('two.txt', 'www.txt') # переименовать файл
-
-os.rename("www.txt", "folder/www.txt") # переместить файл в заданную папку
-
-os.renames("text4.txt", "test/text4.txt") #
+# import os
+# # os.mkdir('folder')# создать папку
+# # os.rmkdir('folder.txt') # удалить папку
+#
+# # os.makedirs('nested1/nested2/nested3') # создает директорию с подпапками
+#
+# os.rename('two.txt', 'www.txt') # переименовать файл
+#
+# os.rename("www.txt", "folder/www.txt") # переместить файл в заданную папку
+#
+# os.renames("text4.txt", "test/text4.txt") #
